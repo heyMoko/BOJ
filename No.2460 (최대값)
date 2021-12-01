@@ -1,0 +1,14 @@
+from sys import stdin, stdout
+
+input = stdin.readline
+
+result = 0 
+num = 0
+
+for _ in range(10):
+    a, b = map(int, input().split())
+    num -= a
+    num += b
+    result = max(result, num)
+    
+print(result)
