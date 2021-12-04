@@ -1,0 +1,13 @@
+a = int(input())
+
+num = a
+cycle = 0
+
+while True:
+    now_num = (num // 10) + (num % 10)
+    new_num = ((num % 10) * 10) + (now_num % 10)
+    cycle += 1
+    if new_num == a:
+        break
+    num = new_num
+print(cycle)
