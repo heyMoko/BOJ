@@ -1,0 +1,9 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+multiple_str = str(a*b*c)
+
+for i in range(10):
+    i_cnt = multiple_str.count(str(i))
+    print(i_cnt)
