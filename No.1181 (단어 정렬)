@@ -1,0 +1,14 @@
+n = int(input())
+
+l = []
+
+for i in range(n):
+  l.append(input())
+
+l_set = set(l)
+l_list = list(l_set)
+l_list.sort()
+l_list.sort(key=len)
+
+for i in range(len(l_list)):
+  print(l_list[i])
